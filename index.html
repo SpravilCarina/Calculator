@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        /* Stil pentru zona de rezultat */
+        #rezultat {
+            margin-top: 10px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .succes {
+            color: green;
+        }
+        .eroare {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+
+    <!-- Formularul pentru introducerea numerelor -->
+    <input type="number" id="num1" placeholder="Introdu primul număr">
+    <input type="number" id="num2" placeholder="Introdu al doilea număr">
+
+    <br><br>
+
+    <!-- Butoanele pentru fiecare operație -->
+    <button onclick="adauga()">Adunare</button>
+    <button onclick="scade()">Scădere</button>
+    <button onclick="inmulteste()">Înmulțire</button>
+    <button onclick="imparte()">Împărțire</button>
+
+    <br><br>
+
+    <!-- Zona unde va apărea rezultatul -->
+    <div id="rezultat"></div>
+
+    <!-- Inclus scriptul JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
